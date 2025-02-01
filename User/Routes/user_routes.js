@@ -7,6 +7,7 @@ router.post('/register' , contoller.register)
 router.post('/login' , contoller.login)
 router.get('/logout' ,contoller.logout)
 router.get('/profile' ,AuthMiddleware.userAuth , contoller.profile)
+router.get('/accepted-ride',AuthMiddleware.userAuth, contoller.acceptedRide);
 
 
 module.exports = router

@@ -1,0 +1,5 @@
+we use morgan as dependency here as HTTP request logger middleware
+amqplib -: this is the dependency for asynchronous communication or data sharing between the services
+also we have created instance on amqp
+Rabbit mq = this sib used for message broker
+long polling concept

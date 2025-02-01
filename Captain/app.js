@@ -4,7 +4,7 @@ const dotenv = require('dotenv')
 dotenv.config()
 const connect = require('./DB/db')
 connect()
-const UserRoute = require('./Routes/user_routes')
+const CaptainRoute = require('./Routes/captain_routes')
 const cookieParser = require('cookie-parser')
 const RabbitMQ = require('./service/rabbit')
 
@@ -15,6 +15,6 @@ app.use(express.urlencoded({extended:true}))
 app.use(cookieParser())
 
 
-app.use('/' ,UserRoute)
+app.use('/' ,CaptainRoute)
 
 module.exports = app
